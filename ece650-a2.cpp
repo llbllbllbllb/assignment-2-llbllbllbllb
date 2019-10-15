@@ -77,7 +77,6 @@ void readCommand(string command, int &vertexNumber, int &startNum, int &endNum, 
 			string ss;
 			regex re("-?[0-9]+");
 			ss = command.substr(2,ss.size()-1); // remove "s " at the beginning
-			cout<<ss<<endl;
 
 			sregex_iterator next(ss.begin(), ss.end(), re);
 			sregex_iterator end;
